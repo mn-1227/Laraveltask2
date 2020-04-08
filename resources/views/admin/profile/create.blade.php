@@ -8,7 +8,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>My プロフィール</h2>
+                <h2>{{ __('messages.My Profile') }}</h2>
                 <form action="{{ action('Admin\NewsController@create') }}" method="post" enctype="multipart/form-data">
 
                     @if (count($errors) > 0)
@@ -19,25 +19,25 @@
                         </ul>
                     @endif
                     <div class="form-group row">
-                        <label class="col-md-2">氏名</label>
+                        <label class="col-md-2">{{ __('messages.name') }}</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="title" value="{{ old('title') }}">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2">性別</label>
+                        <label class="col-md-2">{{ __('messages.gender') }}</label>
                         <div class="col-md-10">
                             <input type="text" class="form-control" name="title" value="{{ old('title') }}">
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2">趣味</label>
+                        <label class="col-md-2">{{ __('messages.hobby') }}</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="body" rows="10">{{ old('body') }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2">自己紹介欄</label>
+                        <label class="col-md-2">{{ __('messages.introduction') }}</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="body" rows="10">{{ old('body') }}</textarea>
                         </div>
