@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html>
+
 @extends('layouts.profile')
 @section('title', 'プロフィールの編集')
 @section('content')
@@ -49,3 +52,4 @@
         </div>
     </div>
 @endsection
+</html>

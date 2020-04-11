@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 @extends('layouts.admin')
 @section('title', 'ニュースの編集')
 
@@ -52,3 +54,4 @@
         </div>
     </div>
 @endsection
+</html>
